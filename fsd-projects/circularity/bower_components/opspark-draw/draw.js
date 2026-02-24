@@ -278,8 +278,8 @@
 			if (addCross) {
 			    // always make sure the cross is visible - it won't be if randomizeAlpha is false //
 			    randomizeAlpha = true;
-    			circle = draw.line(-(props.radius), 0, props.radius, 0, borderColor  || '#000', 2);
-    		    draw.line(0, -(props.radius), 0, props.radius, borderColor || '#000', 2, circle);
+    			circle = draw.line(-(props.radius), 0, props.radius, 0, borderColor  || '#bf00ff', 2);
+    		    draw.line(0, -(props.radius), 0, props.radius, borderColor || '#5900ff', 2, circle);
 			}
 			
 			if (borderColor && !borderThickness) { borderThickness = 1; }
@@ -317,7 +317,7 @@
         blurFilterOn: blurFilterOn,
         
         fps: function (color) {
-            color = (color) ? color : '#FFF';
+            color = (color) ? color : '#ff039f';
             var _textfield = new createjs.Text("-- fps", "bold 15px Arial", color);
             var _fps = new createjs.Container();
             _fps.textfield = _textfield;
